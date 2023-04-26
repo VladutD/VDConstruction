@@ -1,0 +1,250 @@
+@import url(https://fonts.google.com/specimen/Cedarville+Cursive?query=cursive);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  top: 0;
+}
+.freetransport {
+  font-size: 20px;
+  color: goldenrod;
+  text-align: center;
+  background-color: black;
+  padding: 1rem;
+}
+.freetransport i {
+  padding-right: 20px;
+}
+
+.logo {
+  padding: 10px 10px;
+}
+
+.logo img {
+  display: flex;
+  width: 80%;
+  height: 40%;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #00171f;
+  z-index: 111;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #fff;
+  transition: 1 ease-in-out;
+  margin: 0px 10px;
+  position: relative;
+}
+header nav a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -9px;
+  background: gold;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: scale(0);
+  transform: 1 ease-in-out;
+}
+header nav a:hover::before {
+  transform: scale(1);
+}
+header nav a:hover {
+  color: gold;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+}
+.banner-img {
+  width: 50%;
+  height: 50%;
+}
+.banner-img img {
+  max-width: 550px;
+}
+.banner-text {
+  color: #00171f;
+  font-size: 45px;
+  font-family: "Bona Nova", serif;
+}
+.banner-text h2 {
+  font-size: 55px;
+  color: #00171f;
+}
+.banner-text h1 {
+  color: #00171f;
+  font-family: "Bona Nova", serif;
+  background-color: re;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.banner-text button {
+  padding: 15px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #054a29;
+  border: 5px solid black;
+  transition: 0.2s ease-in-out;
+  background-color: black;
+  border-radius: 15px;
+  padding-top: 10px;
+}
+.banner-text button:hover {
+  border-color: goldenrod;
+  color: goldenrod;
+}
+.shop {
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+}
+
+.shop .bosch-flex {
+  flex-wrap: nowrap;
+  grid-row-gap: 10px;
+}
+.bosch-flex .bosch-1 {
+  color: #fff;
+}
+.bosch-1 .bosch-img {
+  position: relative;
+  overflow: hidden;
+  background: #00171f;
+  padding: 60px 30px;
+  border: 100px;
+  margin: -10px;
+  margin-bottom: 20px;
+  height: 250px;
+  border-radius: 80px;
+}
+.bosch-img img {
+  width: 80%;
+}
+.only-img {
+  max-width: 350px;
+}
+
+.bosch-img .price {
+  position: relative;
+  top: -90px;
+  right: -300px;
+
+  padding: 6px 15px;
+  color: goldenrod;
+  font-size: 21px;
+  font-weight: bold;
+}
+.bosch-img .icons {
+  position: absolute;
+  bottom: 15px;
+  left: 40%;
+  transform: translateX(-35%);
+}
+.bosch-img .icons a {
+  text-decoration: none;
+  color: goldenrod;
+  font-size: 17px;
+  /* border: 1px solid white;*/
+  padding: 10px 1px 10px 30px;
+}
+.bosch-img .icons a fa-regular fa-heart {
+  color: red;
+}
+.bosch-img .icons a:hover {
+  border-color: #000;
+  color: #000;
+}
+.bosch-1 h2 {
+  text-transform: capitalize;
+  font: 1.1rem;
+}
+.bosch-1 .stars {
+  color: gold;
+}
+.bosch-1 article {
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  color: white;
+}
+.bosch-1 span {
+  color: red;
+  text-decoration: line-through;
+}
+
+.footer-container {
+  background-color: #00171f;
+  padding-bottom: 4rem;
+}
+.footer {
+  width: 80%;
+  height: 40vh;
+  background-color: #00171f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+.footer-heading a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover {
+  color: goldenrod;
+  transition: 0.3s ease-out;
+}
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+#footer-email {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+#footer-email-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: goldenrod;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
